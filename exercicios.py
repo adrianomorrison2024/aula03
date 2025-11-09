@@ -4,18 +4,18 @@
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
 
-lista_qtde = [120, 60, 62, 43, 51, 99, 1024]
-lista_preco = [1201, 456, 33, 96, 109, 12, 9]
+# lista_qtde = [120, 60, 62, 43, 51, 99, 1024]
+# lista_preco = [1201, 456, 33, 96, 109, 12, 9]
 
 # i = 0
 # if i in lista_preco:
 #     print(i)
 
-for i in lista_preco:
-    if i % 2 == 0:
-        print(f"{i} é um dado válido")
-    else:
-        print(f"{i} não é um dado válido")    
+# for i in lista_preco:
+#     if i % 2 == 0:
+#         print(f"{i} é um dado válido")
+#     else:
+#         print(f"{i} não é um dado válido")    
         
 
 
@@ -44,6 +44,22 @@ for i in lista_preco:
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
+
+texto = "Botafogo ainda vai ser campeão deste campeonato. O Botafogo é sempres assim."
+texto2 = texto.split()
+
+contagem_palavra = {}
+
+for i in texto2:
+    if i in texto:
+        contagem_palavra += 1
+    else:
+        contagem_palavra = 1  
+
+    print(i, contagem_palavra)      
+     
+    
+
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
